@@ -1,3 +1,4 @@
+This is the president's home page.
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
