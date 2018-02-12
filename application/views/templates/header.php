@@ -16,22 +16,26 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
             <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>/PresHome">PresHome</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>PresHome">PresHome</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>/Members">Members</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>Members">Members</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="<?php echo base_url(); ?>/Calendar">Calendar</a>
+        <a class="nav-link disabled" href="<?php echo base_url(); ?>Calendar">Calendar</a>
       </li>
             <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>/FundManager">Fund Manager</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>FundManager">Fund Manager</a>
       </li>
             <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>/Documents">Documents</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>Documents">Documents</a>
       </li>
             <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>/Settings">Settings</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>Settings">Settings</a>
+      </li>
+            </li>
+            <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url(); ?>testing">TESTING</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
