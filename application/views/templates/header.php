@@ -22,7 +22,7 @@
         <a class="nav-link" href="<?php echo base_url(); ?>Members">Members</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="<?php echo base_url(); ?>Calendar">Calendar</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>Calendar">Calendar</a>
       </li>
             <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>FundManager">Fund Manager</a>
