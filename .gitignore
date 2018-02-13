@@ -16,8 +16,7 @@ user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
 /vendor/
 
-application/config/database.php
-application/config/testfile.php
+application/config/trueDB.php
 
 # IDE Files
 #-------------------------
