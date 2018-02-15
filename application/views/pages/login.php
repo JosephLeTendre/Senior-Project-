@@ -1,31 +1,8 @@
-This is home
-<!-- Button -->
-<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+<!DOCTYPE html>
+<html>
+<head>
 
-<!-- The Modal (contains the Sign Up form) -->
-<div id="id01" class="modal">
-<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">times;</span>
-<form class="modal-content" action="/action_page.php">
-<div class="container">
-<h1>Sign Up</h1>
-<p>Please fill in this form to create an account.</p>
-<hr>
-<label for="email"><b>Email</b></label>
-<input type="text" placeholder="Enter Email" name="email" required>
+<script type="text/javascript" id="lbscript1028374" src="https://www.benchmarkemail.com/code/lbformnew.js?mFcQnoBFKMRhPxCcVP%252Fft6jgVtVj7bhtV4NQh9oM4nKgMY2OfLKlNzciHg%252FVbFy1"></script><noscript>Please enable JavaScript <br /><div align="center" style="padding-top:5px;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;"><a href="//www.benchmarkemail.com" target="_new" style="text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;">Email Marketing Services</a> by Benchmark</div></noscript>
 
-<label for="psw"><b>Password</b></label>
-<input type="password" placeholder="Enter Password" name="psw" required>
-
-<label>
-<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-</label>
-
-<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-<div class="clearfix">
-<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-<button type="submit" class="signup">Sign Up</button>
-</div>
-</div>
-</form>
-</div>
+</head>
+</html>
