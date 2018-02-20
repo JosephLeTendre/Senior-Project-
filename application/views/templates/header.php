@@ -37,7 +37,10 @@
     padding: 12px 10px 12px 10px;
   }
 
-  #body {
+  #body1 {
+    margin: 0 15px 0 15px;
+  }
+  #body2 {
     margin: 0 15px 0 15px;
   }
 
@@ -72,26 +75,26 @@
         <a class="nav-link" href="<?php echo base_url(); ?>PresHome">PresHome</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>Members">Members</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>members">Members</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>Calendar">Calendar</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>calendar">Calendar</a>
       </li>
             <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>FundManager">Fund Manager</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>fundmanager">Fund Manager</a>
       </li>
             <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>Documents">Documents</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>documents">Documents</a>
       </li>
             <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>Settings">Settings</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>settings">Settings</a>
       </li>
             </li>
             <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>testing">TESTING</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>Login">Login</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>login">Login</a>
       </li>
     </ul> 
   </div>
