@@ -1,1 +1,8 @@
-This is where the calendar goes.
+
+<div>
+	<?php
+		echo $this->calendar->generate();
+	?>
+</div>
+
+
