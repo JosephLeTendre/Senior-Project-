@@ -55,7 +55,43 @@ class CI_Calendar {
 	 *
 	 * @var mixed
 	 */
-	public $template = '';
+	public $template = '{table_open}<div class="table-responsive"><table border="0" cellpadding="0" cellspacing="0" class="table table-hover table-striped table-bordered calendar">{/table_open}
+            
+            {heading_row_start}<tr>{/heading_row_start}
+            
+
+            {heading_title_cell}<th class="text-center" colspan="{colspan}">{heading}</th>{/heading_title_cell}
+            
+            {heading_row_end}</tr>{/heading_row_end}
+            
+            {week_row_start}<tr >{/week_row_start}
+            {week_day_cell}<td class="text-center" style="height: 5rem;">{week_day}</td>{/week_day_cell}
+            {week_row_end}</tr>{/week_row_end}
+            
+            {cal_row_start}<tr class="days">{/cal_row_start}
+            {cal_cell_start}<td class="day">{/cal_cell_start}
+            
+            {cal_cell_content}
+                <div class="day_number">{day}</div>
+                <div class="content" style="margin-top: 0;">{content}</div>
+            {/cal_cell_content}
+            {cal_cell_content_today}
+                <div class="day_number highlight">{day}</div>
+                <div class="content" style="margin-top: 0;">{content}</div>
+            {/cal_cell_content_today}
+            
+            {cal_cell_no_content}
+            <div class="day_number">{day}</div>
+            {/cal_cell_no_content}
+            {cal_cell_no_content_today}
+            <div class="day_number highlight">{day}</div>
+            {/cal_cell_no_content_today}
+            {cal_cell_blank}&nbsp;{/cal_cell_blank}
+            
+            {cal_cell_end}</td>{/cal_cell_end}
+            {cal_row_end}</tr>{/cal_row_end}
+            
+            {table_close}</table></div>{/table_close}';
 
 	/**
 	 * Replacements array for template
@@ -83,7 +119,7 @@ class CI_Calendar {
 	 *
 	 * @var string
 	 */
-	public $day_type = 'abr';
+	public $day_type = 'long';
 
 	/**
 	 * Whether to show next/prev month links
@@ -97,7 +133,7 @@ class CI_Calendar {
 	 *
 	 * @var bool
 	 */
-	public $next_prev_url = '/Senior-Project-/calendar/';
+	public $next_prev_url = 'http://localhost/Senior-Project-/mycal/display';
 
 	/**
 	 * Show days of other months
