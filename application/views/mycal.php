@@ -3,7 +3,7 @@
   	<title>My Calendar </title>
 	<style type = "text/css">
 		.calendar {
-			font-family: Arial; font-size: 100px;
+			font-family: Arial; font-size: 12px;
 		}
 		table.calendar{
 			margin: auto; border-collapse: collapse;

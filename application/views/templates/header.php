@@ -78,7 +78,7 @@
         <a class="nav-link" href="<?php echo base_url(); ?>members">Members</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>calendar">Calendar</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>mycal/display">Calendar</a>
       </li>
             <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>fundmanager">Fund Manager</a>
@@ -91,7 +91,7 @@
       </li>
             </li>
             <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>testing">TESTING</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>mycal/display">TESTING</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>login">Login</a>
