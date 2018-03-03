@@ -9,6 +9,9 @@
   ::-moz-selection { background-color: #E13300; color: white; }
 
 
+body{
+  background-color: #ecebe8;
+}
 
   a {
     color: #003399;
@@ -63,7 +66,7 @@
 
   </head>
   <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="home">EZClub</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -78,7 +81,8 @@
         <a class="nav-link" href="<?php echo base_url(); ?>members">Members</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>calendar">Calendar</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>mycal/display ">Calendar</a>
+
       </li>
             <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>fundmanager">Fund Manager</a>
@@ -99,3 +103,4 @@
     </ul> 
   </div>
 </nav>
+
