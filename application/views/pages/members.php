@@ -2,6 +2,30 @@
 <html>
 <body>
 
+<?php
+
+		$this->load->library('table');
+		$this->table->set_heading('UserID','FirstName','Email');
+
+		$style = array('table_open'  => '<table class="table table-bordered table-hover">');
+	    $this->table->set_template($style);
+	    $members = $this->db->get('login');
+	    echo $this->table->generate($members);
+
+
+	// $this->load->library('table');
+	// $query = $this->db->query("SELECT * FROM login");
+	// echo $this->table->generate($query);
+?>
+
+
+
+
+
+
+
+
+
 
 <style type=\"text/css\"> #signupFormOverlay, #signupFormVeil {position: fixed; width: 100%; height: 100%; overflow: hidden; top: 0; left: 0;border: none;} #signupFormOverlay { z-index: 777777; background-color: rgba(21, 18, 18, 0.2); } #signupFormContent > div.formbox-editor {position: absolute;} #signupFormVeil {opacity: 0;} #signupFormContent.position-centered  > div.formbox-editor {position: relative;} #signupFormContainer, #signupFormContent {z-index: 888888;position: fixed;width: 100%;height: 100%;border: none;top: 0;left: 0;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;overflow: auto;} #signupFormContainer {overflow: hidden;} #close-btn svg {display: block;}  #close-btn path {fill: #671818;}#signupFormContainer > #close-btn { right: 20px!important; top: 20px!important; }  #close-btn {position:absolute;cursor: pointer;z-index: 999999;font-size: 20px;display:block; top: 10px; right: 10px;color: #671818;background-color: ;border-radius:0px;} .animation-slideUp{animation-name: animation-slideUp; -webkit-animation-name: animation-slideUp; animation-duration: 1s; -webkit-animation-duration: 1s; animation-timing-function: ease; -webkit-animation-timing-function: ease; visibility: visible !important;} @keyframes animation-slideUp {0% {transform: translateY(100%);} 100% {transform: translateY(0%);} } @-webkit-keyframes animation-slideUp {0% {-webkit-transform: translateY(100%);} 100% {-webkit-transform: translateY(0%);} } .formbox-editor fieldset {border: none;margin: 0;padding: 0 40px;position: relative;} .formbox-editor fieldset > input,.formbox-editor fieldset > textarea,.formbox-editable-field {margin: 10px 0;outline: none;} .spacer-block {min-height: 20px;padding: 10px 0;position: relative;} .spacer-block-line {position: absolute;top: 50%;left: 40px;right: 40px;display: none;border-top-style: solid;} .formbox-editor {margin: 0 auto;padding: 0;text-align: left;width: 100%;box-sizing: border-box;} #formbox_screen_subscribe, #formbox_screen_success {padding: 30px 0;}  .formbox-title, .formbox-text-field {margin-bottom: 0; font-family: Helvetica, Arial, sans-serif; color: #000000; font-size: 14px; } .formbox-title a, .formbox-text-field a  {text-decoration: none;}  .formbox-title p, .formbox-text-field p {margin: 0;margin-bottom: 10px;padding: 0; word-break: break-word;} label.formbox-field-label {font-family: Helvetica, Arial, sans-serif; display: block; margin: 10px 0 0; padding: 0; font-size: 14px; text-align: left;line-height: 100%; color: #000000;} label.formbox-label-wrap {font-family: Helvetica, Arial, sans-serif; display: block; margin: 10px 0 0; padding: 0; font-size: 14px; line-height: 100%; padding-left: 15px; text-indent: -15px; font-style: italic;color: #000000;} label.formbox-label-wrap:last-of-type {margin-bottom: 10px;} label.formbox-label-wrap input[type=checkbox], label.formbox-label-wrap input[type=radio] { width: 13px; height: 13px; padding: 0; margin:0; margin-right: 5px; vertical-align: bottom; position: relative; top: -1px; } select.formbox-field {background-color: #000000; border: 2px solid #F1F2F2; border-radius: 0px; box-sizing: border-box; background-color: #f1fbfb; font-family: Helvetica, Arial, sans-serif; font-size: 14px; width: 100%; margin: 10px 0; height: auto; padding: 2px 0px;} input.formbox-field {color: #000000; background-color: #f1fbfb; border: 2px solid #F1F2F2; border-radius:0px; font-family: Helvetica, Arial, sans-serif; font-size: 14px; box-sizing: border-box; padding:15px; width: 100%;} input.formbox-field.text-placeholder {color: #C4C4C4; font-weight: normal; font-style: normal; font-family: Helvetica, Arial, sans-serif; font-size: 14px;} .formbox-field::-webkit-input-placeholder {color: #C4C4C4; font-weight: normal; font-style: normal;opacity: 1;} .formbox-field::-moz-placeholder { color: #C4C4C4; font-weight: normal; font-style: normal;opacity: 1;} .formbox-field:-ms-input-placeholder {color: #C4C4C4; font-weight: normal; font-style: normal; opacity: 1;} .formbox-button {line-height: 100%;  cursor: pointer; margin: 10px 0; } .formbox-button:hover { background-color:#96c3da !important; } .formbox-button:active { background-color:#6e9bb2 !important; }#popupFormLoader { display: none; position: absolute; bottom: 10px; right: 10px; width: 20px; height: 20px; background-image: url(https://benchmarkemail.com/images/popup-builder/loadingicon.svg); background-position: center center; background-repeat: no-repeat; background-color: rgb(255, 255, 255); background-color: rgba(255, 255, 255, 0.3);  border-radius: 100%; -webkit-animation-name: spin; -webkit-animation-duration: 800ms; -webkit-animation-iteration-count: infinite; -webkit-animation-timing-function: linear; -moz-animation-name: spin; -moz-animation-duration: 800ms; -moz-animation-iteration-count: infinite; -moz-animation-timing-function: linear;-ms-animation-name: spin;-ms-animation-duration: 800ms;-ms-animation-iteration-count: infinite;-ms-animation-timing-function: linear;animation-name: spin;animation-duration: 800ms;animation-iteration-count: infinite;animation-timing-function: linear;}@-moz-keyframes spin {from { -moz-transform: rotate(0deg); }to { -moz-transform: rotate(360deg); }}@-webkit-keyframes spin {from { -webkit-transform: rotate(0deg); }to { -webkit-transform: rotate(360deg); }}@keyframes spin {from {transform:rotate(0deg);}to {transform:rotate(360deg);}}</style>
 
