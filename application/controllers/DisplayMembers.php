@@ -18,7 +18,7 @@
 
 	    $data['testing'] = $this->DisplayMembers->get_members();
 	    $this->load->view('templates/header');
-	    $this->load->view('members', $data);
+	    $this->load->view('pages/members', $data);
         $this->load->view('templates/footer');
 
 	}
