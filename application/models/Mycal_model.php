@@ -1,14 +1,14 @@
 <?php
 class Mycal_model extends CI_Model{
-	function generate ($year, $month){
-			$conf = array(
-			'show_next_prev' => true,
-			'next_prev_url' => base_url() . 'mycal/display',
-			'template' => '{table_open}<div class="table-responsive"><table border="0" cellpadding="0" cellspacing="0" class="table table-hover table-striped table-bordered calendar">{/table_open}
+    function generate ($year, $month){
+            $conf = array(
+            'start_day' => 'monday',
+            'show_next_prev' => true,
+            'next_prev_url' => base_url() . 'mycal/display',
+            'template' => '{table_open}<div class="table-light"><table border="0" cellpadding="0" cellspacing="0" class="table table-hover table-striped table-bordered calendar">{/table_open}
             
             {heading_row_start}<tr>{/heading_row_start}
             
-
             {heading_title_cell}<th class="text-center" colspan="{colspan}">{heading}</th>{/heading_title_cell}
             
             {heading_row_end}</tr>{/heading_row_end}
@@ -41,10 +41,20 @@ class Mycal_model extends CI_Model{
             {cal_row_end}</tr>{/cal_row_end}
             
             {table_close}</table></div>{/table_close}'
-		);
-
-		$this->load->library('calendar', $conf);
-
-		return $this->calendar->generate($year,$month);
-	}
+        );
+        function get_calendar_data($year, $month){
+            $query = $this->db->select('date, data')->from('calendar')->like('date', "$year-$month", 'after')->get();
+            $cal_data = array();
+            foreach ($query->result() as $row){
+                $cal_data[substr($row->date,8,2)] = $row->data;
+            }
+            return cal_data;
+        }
+        $this->load->library('calendar', $conf);
+        $cal_data = array(
+            15 => 'foo',
+            17 => 'bar'
+        );
+        return $this->calendar->generate($year,$month, $cal_data);
+    }
 }
