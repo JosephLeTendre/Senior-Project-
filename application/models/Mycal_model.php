@@ -5,7 +5,7 @@ class Mycal_model extends CI_Model{
             'start_day' => 'monday',
             'show_next_prev' => true,
             'next_prev_url' => base_url() . 'mycal/display',
-            'template' => '{table_open}<div class="table-light"><table border="0" cellpadding="0" cellspacing="0" class="table table-hover table-striped table-bordered calendar">{/table_open}
+            'template' => '{table_open}<div class="table-default"><table border="0" cellpadding="0" cellspacing="0" class="table table-hover table-striped table-bordered calendar">{/table_open}
             
             {heading_row_start}<tr>{/heading_row_start}
             
