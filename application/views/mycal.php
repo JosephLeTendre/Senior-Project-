@@ -14,15 +14,12 @@
 			vertical-align: top;
 			background-color: #DEF;
 		}
-<<<<<<< HEAD
-=======
 		.calendar .days td:hover{
 			background-color: #FFF;
 		}
 		.calendar .highlight{
 			font-weight: bold; color:#00f;
 		}
->>>>>>> 9c908da49ee23828b3dc6b9f7b27761274ac5772
 	</style>
 </head>
 <body>
