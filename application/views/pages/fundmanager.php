@@ -20,11 +20,21 @@
 	    			$this->table->set_template($style);
 					$total = $this->db->query("SELECT InitialBudget FROM club;");
 					echo $this->table->generate($total); 
-				?><br></code>
+				?>
+		<br></code>
 	</div>
-	<div id="body1" style = "text-align: center; width: 80%">
+
+	<div id="body1" style = "text-align: center;">
 		&nbsp
 		<h4>Transaction History List:</h4>
-			<code>[INSERT LIST OF TRANSACTIONS]<br></code>
+			<code><?php
+					$this->load->library('table');
+					$this->table->set_heading('Event Name','Date','Cost of Event');
+					$style = array('table_open'  => '<table class="table table-bordered table-hover">');
+	    			$this->table->set_template($style);
+					$transactions = $this->db->query("SELECT EventName, DATE, TotalCost FROM events;");
+					echo $this->table->generate($transactions); 
+				  ?>
+	    <br></code>
 	</div>
 </div>
