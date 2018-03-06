@@ -93,9 +93,6 @@ body{
         <a class="nav-link" href="<?php echo base_url(); ?>settings">Settings</a>
       </li>
             </li>
-            <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>mycal/display">TESTING</a>
-      </li>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>login">Login</a>
       </li>
