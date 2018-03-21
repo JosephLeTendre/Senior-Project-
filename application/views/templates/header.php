@@ -93,26 +93,7 @@ body{
     </ul>
   <?php endif; ?>
 
-<?php if($this->session->userdata('logged_in')) : ?>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="<?php echo base_url(); ?>PresHome">PresHome</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>members">Members</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>mycal/display">Calendar</a>
-      </li>
-            <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>fundmanager">Fund Manager</a>
-      </li>
-            <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>documents">Documents</a>
-      </li>
-    </ul>
-  <?php endif; ?>
+
   
 
       <ul class="nav navbar-nav navbar-right">
