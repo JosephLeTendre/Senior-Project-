@@ -19,7 +19,7 @@
 				$this->user_model->register($enc_password);
 				// Set message
 				$this->session->set_flashdata('user_registered', 'You are now registered and can log in');
-				redirect('posts');
+				redirect('home');
 			}
 		}
 		// Log in user
@@ -49,7 +49,7 @@
 					$this->session->set_userdata($user_data);
 					// Set message
 					$this->session->set_flashdata('user_loggedin', 'You are now logged in');
-					redirect('posts');
+					redirect('home');
 				} else {
 					// Set message
 					$this->session->set_flashdata('login_failed', 'Login is invalid');
