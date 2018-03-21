@@ -5,7 +5,7 @@
 <?php
 
 		$this->load->library('table');
-		$this->table->set_heading('UserID','FirstName','Email','Title');
+		$this->table->set_heading('UserID','FirstName','Email');
 
 		$style = array('table_open'  => '<table class="table table-bordered table-hover">');
 	    $this->table->set_template($style);
