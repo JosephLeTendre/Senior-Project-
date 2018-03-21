@@ -72,7 +72,7 @@ body{
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
+<?php if($this->session->userdata('logged_in')) : ?>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
@@ -91,8 +91,10 @@ body{
         <a class="nav-link" href="<?php echo base_url(); ?>documents">Documents</a>
       </li>
     </ul>
+  <?php endif; ?>
 
       <ul class="nav navbar-nav navbar-right">
+<?php if(!$this->session->userdata('logged_in')) : ?>
             <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>users/login">Login</a>
       </li>
@@ -100,6 +102,9 @@ body{
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>users/register">Register</a>
       </li>
+
+<?php endif; ?>
+
 
       <?php if($this->session->userdata('logged_in')) : ?>
       <li class="nav-item">
