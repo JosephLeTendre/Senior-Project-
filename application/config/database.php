@@ -75,13 +75,13 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
+	'hostname' => '127.0.0.1',
+	'username' => 'root',
 	'password' => '',
-	'database' => '',
+	'database' => 'ezclub',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
-	'pconnect' => FALSE,
+	'pconnect' => TRUE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
 	'cachedir' => '',
