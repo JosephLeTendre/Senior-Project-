@@ -15,7 +15,7 @@
 				<input type="email" class="form-control" name="email" placeholder="Email">
 			</div>
 			<div class="form-group">
-				<label>Club Name</label>
+				<label>Username</label>
 				<input type="text" class="form-control" name="username" placeholder="Username">
 			</div>
 			<div class="form-group">
