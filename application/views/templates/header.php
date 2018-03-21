@@ -68,7 +68,7 @@ body{
   </head>
   <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="home"><img src="<?php echo site_url('/images/EZclub.png');?>" style="max-height: 50px; max-width: 50px;" /></a>
+  <a class="navbar-brand" href="home"><img src="<?php echo site_url('/images/EZclub.png');?>" style="max-height: 75px; max-width: 75px;" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
