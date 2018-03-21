@@ -91,7 +91,7 @@ body{
         <a class="nav-link" href="<?php echo base_url(); ?>documents">Documents</a>
       </li>
             <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url(); ?>settings">Settings</a>
+        <a class="nav-link" href="<?php echo base_url(); ?>users/login">Login</a>
       </li>
             </li>
       <li class="nav-item">
@@ -104,7 +104,7 @@ body{
 
 
 <div class="container">
-      <!-- Flash messages -->
+      <!-- Flash messages  to check sessions-->
       <?php if($this->session->flashdata('user_registered')): ?>
         <?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_registered').'</p>'; ?>
       <?php endif; ?>
