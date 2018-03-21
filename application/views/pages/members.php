@@ -9,7 +9,7 @@
 
 		$style = array('table_open'  => '<table class="table table-bordered table-hover">');
 	    $this->table->set_template($style);
-	    $members = $this->db->query("SELECT UserID, FirstName, Email, Title FROM login;");
+	    $members = $this->db->query("SELECT id, name, email FROM users;");
 	    echo $this->table->generate($members);
 
 
