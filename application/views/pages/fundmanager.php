@@ -37,4 +37,27 @@
 				  ?>
 	    <br></code>
 	</div>
+
+	<div id="body1">
+		<br>
+		<h4> Add New Budget Item </h4>
+		<?php echo validation_errors(); ?>
+		<?php echo form_open('Funds/addItem');?>
+			<div class="form-group">
+				<label>Name</label>
+				<input type="text" name="name" class="form-control" style="width: 25%">
+			</div>
+			<div class="form-group">
+				<label>Date (YYYY-MM-DD)</label>
+				<input type="text" name="date" class="form-control" style="width: 25%">
+			</div>
+			<div class="form-group">
+				<label>Cost </label>
+				<input type="text" name="cost" class="form-control" style="width: 25%">
+			</div>
+			<input type="hidden" name="slug" value='<?php echo $post['slug']; ?>'>
+			<button class="btn btn-primary" type="submit"> Submit </button>
+
+	</div>
+
 </div>

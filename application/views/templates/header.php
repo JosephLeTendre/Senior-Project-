@@ -61,6 +61,7 @@ body{
     border: 1px solid #D0D0D0;
     box-shadow: 0 0 8px #D0D0D0;
   }
+
   </style>
 
 
@@ -74,7 +75,7 @@ body{
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+      <li class="nav-item active">
         <a class="nav-link" href="<?php echo base_url(); ?>PresHome">PresHome</a>
       </li>
       <li class="nav-item">
