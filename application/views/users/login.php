@@ -9,6 +9,7 @@
 				<input type="password" name="password" class="form-control" placeholder="Enter Password" required autofocus>
 			</div>
 			<button type="submit" class="btn btn-primary btn-block">Login</button>
+			<button type="submit" class="btn btn-primary btn-block">Forgot Password</button>
 		</div>
 	</div>
 <?php echo form_close(); ?>

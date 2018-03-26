@@ -26,6 +26,8 @@
 				<input type="password" class="form-control" name="password2" placeholder="Confirm Password">
 			</div>
 			<button type="submit" class="btn btn-primary btn-block">Submit</button>
+			
+		</div>
 		</div>
 	</div>
 <?php echo form_close(); ?>
