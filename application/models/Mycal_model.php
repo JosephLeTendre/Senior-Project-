@@ -1,5 +1,17 @@
 <?php
 class Mycal_model extends CI_Model{
+
+            /*function get_calendar_data($year, $month){
+            //$query = $this->db->query("SELECT date, EventName FROM events LIKE date, $year-$month, ;");
+            //$query = $this->db->select('date, data')->from('calendar')->like('date', "$year-$month", 'after')->get();
+            $query = $this->db->select('date, eventName')->from('events')->like('date', "$year-$month", 'after')->get();
+            $cal_data = array();
+            foreach ($query->result() as $row){
+                $cal_data[substr($row->Date,8,2)] = $row->EventName;
+            }
+            return $cal_data;
+        }*/
+
     function generate ($year, $month){
             $conf = array(
             'show_next_prev' => true,
@@ -41,19 +53,20 @@ class Mycal_model extends CI_Model{
             
             {table_close}</table></div>{/table_close}'
         );
-        function get_calendar_data($year, $month){
-            $query = $this->db->select('date, data')->from('calendar')->like('date', "$year-$month", 'after')->get();
-            $cal_data = array();
-            foreach ($query->result() as $row){
-                $cal_data[substr($row->date,8,2)] = $row->data;
-            }
-            return cal_data;
-        }
         $this->load->library('calendar', $conf);
-        $cal_data = array(
+        /*$cal_data = array(
             15 => 'foo',
             17 => 'bar'
-        );
+        );*/
+
+            $query = $this->db->query("SELECT eventName, date FROM events;");
+            $cal_data = array();
+            foreach ($query->result() as $row){
+                $cal_data[substr($row->date,20,3)] = $row->eventName;
+            }
+
+        //$cal_data = $this->get_calendar_data($year, $month);
+
         return $this->calendar->generate($year,$month, $cal_data);
     }
 }
