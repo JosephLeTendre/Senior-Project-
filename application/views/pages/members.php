@@ -5,11 +5,11 @@
 <?php
 
 		$this->load->library('table');
-		$this->table->set_heading('UserID','FirstName','Email');
+		$this->table->set_heading('Name','Email');
 
 		$style = array('table_open'  => '<table class="table table-bordered table-hover">');
 	    $this->table->set_template($style);
-	    $members = $this->db->query("SELECT id, name, email FROM users;");
+	    $members = $this->db->query("SELECT name, email FROM users;");
 	    echo $this->table->generate($members);
 
 
