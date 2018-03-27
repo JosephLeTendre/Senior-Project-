@@ -83,13 +83,13 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="http://localhost/Senior-Project-/images/oml.jpg" style="width:100%">
+  <img src="http://l35.226.62.243/Senior-Project-/images/oml.jpg" style="width:100%">
   <div class="text">Office of Inclusion and Diversity</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="http://localhost/Senior-Project-/images/btg.jpg" style="width:100%">
+  <img src="http://35.226.62.243/Senior-Project-/images/btg.jpg" style="width:100%">
   <div class="text">Briding the Gap</div>
 </div>
 
