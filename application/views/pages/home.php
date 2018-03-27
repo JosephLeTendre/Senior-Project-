@@ -95,7 +95,7 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="http://localhost/Senior-Project-/images/lsa.jpg" style="width:100%">
+  <img src="http://35.226.62.243/Senior-Project-/images/lsa.jpg" style="width:100%">
   <div class="text">Latino Student Association</div>
 </div>
 
