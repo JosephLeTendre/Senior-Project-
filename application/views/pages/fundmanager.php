@@ -42,7 +42,7 @@
 		<br>
 		<h4> Add New Budget Item </h4>
 		<?php echo validation_errors(); ?>
-		<?php echo form_open('Funds/addItem');?>
+		<?php echo form_open('funds/addItem');?>
 			<div class="form-group">
 				<label>Name</label>
 				<input type="text" name="name" class="form-control" style="width: 25%">
@@ -59,5 +59,6 @@
 			<button class="btn btn-primary" type="submit"> Submit </button>
 
 	</div>
+	<?php echo form_close();?>
 
 </div>

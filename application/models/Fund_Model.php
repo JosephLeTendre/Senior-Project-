@@ -7,10 +7,10 @@ class Fund_Model extends CI_Model{
 	public function create_event($event_id){
 		
 		$data = array(
-			'event_id' => $event_id,
-			'name' => $this->input->post('name'),
-			'date' => $this->input->post('date'),
-			'cost' => $this->input->post('cost')
+			'EventID' => $event_id,
+			'DATE' => $this->input->post('date'),
+			'EventName' => $this->input->post('name'),
+			'TotalCost' => $this->input->post('cost')
 		);
 
 		return $this->db->insert('events', $data);
