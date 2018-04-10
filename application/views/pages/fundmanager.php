@@ -7,19 +7,11 @@
 			<code>
 				<?php 
 					$this->load->library('table');
-					$this->table->set_heading('Current Budget');
-					$style = array('table_open'  => '<table class="table table-bordered table-hover text-primary">');
+					$this->table->set_heading('Current Budget', 'Total Budget');
+					$style = array('table_open'  => '<table class="table table-bordered table-hover text-primary text-center">');
 	    			$this->table->set_template($style);
-		 			$current = $this->db->query("SELECT CurrentBudget FROM club;");
+		 			$current = $this->db->query("SELECT CurrentBudget, InitialBudget FROM club;");
 		 			echo $this->table->generate($current);
-				?>
-				<?php
-					$this->load->library('table');
-					$this->table->set_heading('Total Budget');
-					$style = array('table_open'  => '<table class="table table-bordered table-hover text-primary">');
-	    			$this->table->set_template($style);
-					$total = $this->db->query("SELECT InitialBudget FROM club;");
-					echo $this->table->generate($total); 
 				?>
 		<br></code>
 	</div>
