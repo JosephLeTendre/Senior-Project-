@@ -17,6 +17,13 @@ body{
     color: #003399;
     background-color: transparent;
     font-weight: normal;
+
+
+  }
+
+  nav a.current {
+  background:darkgrey;
+  color:white;
   }
 
   h1 {
@@ -68,14 +75,21 @@ body{
   </head>
   <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  
   <a class="navbar-brand" href="home"><img src="<?php echo site_url('/images/EZclub.png');?>" style="max-height: 75px; max-width: 75px;" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+
+
 <?php if($this->session->userdata('logged_in')) : ?>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+
+
+
+      <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>PresHome">PresHome</a>
       </li>
       <li class="nav-item">
@@ -91,6 +105,27 @@ body{
         <a class="nav-link" href="<?php echo base_url(); ?>documents">Documents</a>
       </li>
     </ul>
+
+
+
+
+
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script>
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current');
+    }
+  });
+});
+</script>
+
+
+
+
+
+
   <?php endif; ?>
 
 
