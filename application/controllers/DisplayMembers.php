@@ -7,7 +7,7 @@
 
 
 	public function index()
-
+	//check if user is logged in
 	if(!$this->session->userdata('logged_in')){
 				redirect('users/login');
 			

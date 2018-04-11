@@ -49,6 +49,7 @@
 					$this->session->set_userdata($user_data);
 					// Set message
 					$this->session->set_flashdata('user_loggedin', 'You are now logged in');
+					
 					redirect('PresHome');
 				} else {
 					// Set message
