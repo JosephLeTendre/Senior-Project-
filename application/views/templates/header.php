@@ -75,7 +75,7 @@ body{
 <?php if($this->session->userdata('logged_in')) : ?>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url(); ?>PresHome">PresHome</a>
       </li>
       <li class="nav-item">

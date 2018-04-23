@@ -15,7 +15,7 @@
 				$q = $this->db->query("SELECT max(EventID) FROM events");
 				$event_id = $q->result();
 				$event_id[max(EventID)]++;
-				$this->Fund_Model->create_event($event_id["max(EventID)"]);
+				$this->Fund_Model->create_event($event_id['max(EventID)']);
 				redirect('fundmanager/');
 			}		
 		}
