@@ -1,5 +1,10 @@
 <div id="container">
-	<h1>[INSERT CLUB'S NAME HERE]'s Fund Manager</h1>
+	<?php 
+		$m = $this->db->query("SELECT ClubName From club");
+		$query = $m->result();
+		$clubname = $query["ClubName"];
+	?>
+	<h1> <?php $clubname['ClubName']; ?> Fund Manager</h1>
 
 	<div id="body1" style = "text-align: center;">
 		&nbsp
@@ -38,7 +43,7 @@
 	    <br></code>
 	</div>
 
-	<div id="body1">
+	<div id="body1" align="center">
 		<br>
 		<h4> Add New Budget Item </h4>
 		<?php echo validation_errors(); ?>
