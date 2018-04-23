@@ -1,5 +1,10 @@
 <div id="container">
-	<h1>Welcome [INSERT CLUB'S NAME HERE]!</h1>
+	<?php 
+		$m = $this->db->query("SELECT ClubName From club");
+		$query = $m->result();
+		$clubname = $query[0]->ClubName;
+	?>
+	<h1>Welcome <?php echo $clubname ?> Member!</h1>
 
 	<div id="body1" style = "float: left; width: 40%">
 		&nbsp

@@ -2,9 +2,10 @@
 	<?php 
 		$m = $this->db->query("SELECT ClubName From club");
 		$query = $m->result();
-		$clubname = $query["ClubName"];
+		//var_dump($query);
+		$clubname = $query[0]->ClubName;
 	?>
-	<h1> <?php $clubname['ClubName']; ?> Fund Manager</h1>
+	<h1> <?php echo $clubname; ?>         Fund Manager</h1>
 
 	<div id="body1" style = "text-align: center;">
 		&nbsp
