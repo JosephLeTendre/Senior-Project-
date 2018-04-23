@@ -84,19 +84,19 @@ img {vertical-align: middle;}
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
   <img src="http://l35.226.62.243/Senior-Project-/images/oml.jpg" style="width:100%">
-  <div class="text">Office of Inclusion and Diversity</div>
+  <div class="bottom-right">Office of Inclusion and Diversity</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
   <img src="http://35.226.62.243/Senior-Project-/images/btg.jpg" style="width:100%">
-  <div class="text">Briding the Gap</div>
+  <div class="bottom-right">Briding the Gap</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
   <img src="http://35.226.62.243/Senior-Project-/images/lsa.jpg" style="width:100%">
-  <div class="text">Latino Student Association</div>
+  <div class="bottom-right">Latino Student Association</div>
 </div>
 
 </div>
@@ -126,7 +126,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 1500; // Change image every 2 seconds
 }
 </script>
 
