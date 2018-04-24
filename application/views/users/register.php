@@ -29,7 +29,7 @@
 
 			<div class="form-group" style="width:250px;">
   <select>
-    <option value="0">Select club:</option>
+    <option disabled >Select club:</option>
     <option value="1">Accounting Society</option>
     <option value="2">Acvtive Minds</option>
     <option value="3">Alpha Phi</option>
@@ -42,7 +42,6 @@
     <option value="10">Down to Pray</option>
     <option value="11">Equestrian Club</option>
     <option value="12">Film Society</option>
-    <option value="13">Select club:</option>
     <option value="14">Accounting Society</option>
     <option value="15">Acvtive Minds</option>
     <option value="16">Alpha Phi</option>

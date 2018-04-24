@@ -2,7 +2,6 @@
 	<?php 
 		$m = $this->db->query("SELECT ClubName From club");
 		$query = $m->result();
-		//var_dump($query);
 		$clubname = $query[0]->ClubName;
 	?>
 	<h1> <?php echo $clubname; ?>         Fund Manager</h1>

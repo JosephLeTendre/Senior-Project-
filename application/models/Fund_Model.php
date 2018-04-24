@@ -5,6 +5,20 @@ class Fund_Model extends CI_Model{
 		$this->load->database(); 
 	}
 	public function create_event($event_id){
+
+		$costCheck = $this->input->post('cost');
+		$q = $this->db->query("SELECT CurrentBudget From club");
+		$ch = $q->result(); 
+		$check = $ch[0]->CurrentBudget; 
+		if (($check-$costCheck)<0){
+			
+		}
+
+		else {
+		$curr = $check;
+
+		$newBudget = $curr - $costCheck; 
+		var_dump($newBudget);
 		
 		$data = array(
 			'EventID' => $event_id,
@@ -13,7 +27,26 @@ class Fund_Model extends CI_Model{
 			'TotalCost' => $this->input->post('cost')
 		);
 
-		return $this->db->insert('events', $data);
+		$this->db->insert('events', $data);
+
+		$id = '123';
+		$myq = $this->db->query("SELECT InitialBudget From club");
+		$initialbudget = $myq->result(); 
+
+		// $myq = $this->db->query("SELECT ClubName From club");
+		// $clubname = $myq->result(); 
+
+		// $myq = $this->db->query("SELECT TotalMembers From club");
+		// $members = $myq->result(); 
+
+		// $replaceQuery = $this->db->query("UPDATE 'club' SET 'CurrentBudget' = $newBudget WHERE 'club'.'ClubID' = 123;");
+
+		// return $this->db->query("UPDATE 'club' SET 'CurrentBudget' = '$newBudget' WHERE 'ClubID' = '123';");
+
+		$this->db->set('CurrentBudget', $newBudget);
+		$this->db->where('ClubID', 123);
+		$this->db->update('club');
+	}
 	}
 
 
