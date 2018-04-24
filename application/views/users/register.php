@@ -28,6 +28,8 @@
 			</div>
 
 			<div class="form-group" style="width:250px;">
+
+                <label>Select Club</label>
   <select>
     <option disabled >Select club:</option>
     <option value="1">Accounting Society</option>
@@ -45,21 +47,9 @@
     <option value="13">Film Society</option>
     
   
-  </select>
-</div>
+</select>
 
-		<div class="form-group" style="width:250px;">
-  <select>
-    <option value="0">Select Role:</option>
-    <option value="1">President</option>
-    <option value="2">Vice President</option>
-    <option value="3"> Secretary</option>
-    <option value="4">Treasurer</option>
-    <option value="5">Member</option>
-    <option value="6">Other</option>
-    
-  </select>
-</div>
+<br>
 <br>
 			<button type="submit" class="btn btn-primary btn-block">Submit</button>
 			
