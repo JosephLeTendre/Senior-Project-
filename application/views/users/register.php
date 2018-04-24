@@ -37,23 +37,14 @@
     <option value="5">Biology Club</option>
     <option value="6">Black Student Union</option>
     <option value="7">Bridging the Gap</option>
-    <option value="8">College Democrates</option>
-    <option value="9">College Republicans</option>
-    <option value="10">Down to Pray</option>
-    <option value="11">Equestrian Club</option>
-    <option value="12">Film Society</option>
-    <option value="14">Accounting Society</option>
-    <option value="15">Acvtive Minds</option>
-    <option value="16">Alpha Phi</option>
-    <option value="17">Asian Students Association</option>
-    <option value="18">Biology Club</option>
-    <option value="19">Black Student Union</option>
-    <option value="20">Bridging the Gap</option>
-    <option value="21">College Democrates</option>
-    <option value="22">College Republicans</option>
-    <option value="23">Down to Pray</option>
-    <option value="24">Equestrian Club</option>
-    <option value="25">Film Society</option>
+    <option value="8">Science Club</option>
+    <option value="9">College Democrates</option>
+    <option value="10">College Republicans</option>
+    <option value="11">Down to Pray</option>
+    <option value="12">Equestrian Club</option>
+    <option value="13">Film Society</option>
+    
+  
   </select>
 </div>
 
