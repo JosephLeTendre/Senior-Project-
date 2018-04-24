@@ -46,6 +46,7 @@ class Fund_Model extends CI_Model{
 		$this->db->set('CurrentBudget', $newBudget);
 		$this->db->where('ClubID', 123);
 		$this->db->update('club');
+		$this->session->set_flashdata('user_registered', 'Event added, be sure to submit a fund request to the school for this event');
 	}
 	}
 

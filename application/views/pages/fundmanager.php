@@ -42,15 +42,15 @@
 		<?php echo form_open('Funds/addItem');?>
 			<div class="form-group text-primary">
 				<label>Name of Event:</label>
-				<input type="text" name="name" class="form-control" style="width: 25%">
+				<input type="text" name="name" class="form-control" style="width: 25%" required>
 			</div>
 			<div class="form-group text-primary">
 				<label>Date of Event(YYYY-MM-DD):</label>
-				<input type="text" name="date" class="form-control" style="width: 25%">
+				<input type="text" name="date" class="form-control" style="width: 25%" required>
 			</div>
 			<div class="form-group text-primary">
 				<label>Cost of Event:</label>
-				<input type="text" name="cost" class="form-control" style="width: 25%">
+				<input type="text" name="cost" class="form-control" style="width: 25%" required>
 			</div>
 			<input type="hidden" name="slug" value='<?php echo $post['slug']; ?>'>
 			<button class="btn btn-primary" type="submit"> Submit </button>
